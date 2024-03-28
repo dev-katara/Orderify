@@ -97,8 +97,8 @@ return (
     <div className="App">
       <ToastContainer />
       <nav>
-      <div className="nav-content">
-            {/* Other nav items */}
+      <div className="nav-content"> 
+            {/* LOGO */}  
             <div className="cart-icon" onClick={goToCart}>
               🛒
               <span className="cart-count">{cart.length}</span>
