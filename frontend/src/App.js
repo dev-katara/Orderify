@@ -97,38 +97,36 @@ return (
     <div className="App">
       <ToastContainer />
       <nav>
-      <div className="nav-content"> 
-            {/* LOGO */}  
-            <div className="cart-icon" onClick={goToCart}>
-              🛒
-              <span className="cart-count">{cart.length}</span>
-            </div>
+        <div className="nav-content"> 
+          <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="Logo" className="logo"/>
+          <div className="cart-icon" onClick={goToCart}>
+            🛒 <span className="cart-count">{cart.length}</span>
+          </div>
         </div>
       </nav>
       <div className="container">
         <aside className="sidebar">
-          <ul>
-            {categories.map(category => (
-              <li key={category.id}>
-                <button onClick={() => filterProductsByCategory(category.id)}>
-                  {category.name}
-                </button>
-              </li>
-            ))}
-          </ul>
+            <ul>
+              {categories.map(category => (
+                <li key={category.id} onClick={() => filterProductsByCategory(category.id)}>
+                <img src={category.image} alt={category.name} style={{ width: '50px', marginRight: '10px' }} />
+                {category.name}
+                </li>
+              ))}
+            </ul>
         </aside>
         <main className="content">
           <Switch>
             <Route path="/" exact>
               <header className="App-header">
-                <h1>Products</h1>
+                <h1>Προιόντα</h1>
                 <div className="product-grid">
                   {Array.isArray(products) && products.map(product => (
                     <div className="product-item" key={product.id}>
                       <h2 className="product-name">{product.name}</h2>
                       {product.image && <img src={product.image} alt={product.name} className="product-image" />}
                       <p className="product-description">{product.description}</p>
-                      <div className="mt-1 ms-5 product-amount d-flex">
+                      <div className="product-amount d-flex">
                         <button onClick={() => CounterD(product.id)} className="btn fs-3 bg-light text-dark me-2 d-flex align-items-center justify-content-center">-</button>
                         <div className="value text-dark d-flex align-items-center justify-content-center fw-bold">{product.quantity}</div>
                         <button onClick={() => CounterI(product.id)} className="btn fs-3 bg-light text-dark ms-2 d-flex align-items-center justify-content-center">+</button>
