@@ -19,10 +19,6 @@ Orderify is a web application designed to allow users to order food from restaur
 - **Authentication**: Django AllAuth, dj-rest-auth
 - **Deployment**: (add if any cloud hosting, Docker, etc.)
 
-## Screenshots
-
-(Include some screenshots of your app here)
-
 ## Setup Instructions
 
 ### Prerequisites
