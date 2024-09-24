@@ -31,7 +31,7 @@ Orderify is a web application designed to allow users to order food from restaur
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/orderify.git
+   git clone https://github.com/dev-katara/Orderify.git
    ``` 
 2. **Make the installation**:
    
