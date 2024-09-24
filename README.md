@@ -15,9 +15,9 @@ Orderify is a web application designed to allow users to order food from restaur
 
 - **Frontend**: React, React Router DOM, React Toastify, Material UI
 - **Backend**: Django, Django REST framework
-- **Database**: SQLite (default for Django)
+- **Database**: SQLite
 - **Authentication**: Django AllAuth, dj-rest-auth
-- **Deployment**: (add if any cloud hosting, Docker, etc.)
+- **Deployment**: Docker
 
 ## Setup Instructions
 
